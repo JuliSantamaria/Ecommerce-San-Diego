@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+    
+}
+
+header .logo {
+    height: 35vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+.navbar .menu-horizontal{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    z-index: 2;
+    
+}
+
+.navbar li a {
+    filter: invert();
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.icons{
+    display: flex;
+    filter: invert();
+    gap: 50px;
+    padding-right: 50px;
+    font-size: 2em;
+}
+
+body .barra-busqueda {
+    display: flex;
+    height: 11vh;
+    background-color: rgb(197, 28, 28);
+    z-index: 2;
+    position:relative;
+    justify-content: center;
+    
+    
+    
+}
+
+.barra-busqueda input {
+    margin: 10px;
+    width: 50vh;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 100px;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 3;
+    
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar .menu-vertical li a{
+    display: block;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
